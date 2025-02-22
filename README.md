@@ -22,7 +22,7 @@ Modern ve kullanıcı dostu bir restoran menü uygulaması. Vue 3, Tailwind CSS 
 
 1. Projeyi klonlayın:
 ```bash
-git clone https://github.com/kullaniciadi/restaurant-menu.git
+git clone https://github.com/enqinsel/restaurant-menu.git
 cd restaurant-menu
 ```
 
