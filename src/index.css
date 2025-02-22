@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .menu-card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 
+           hover:-translate-y-2 hover:shadow-xl cursor-pointer;
+  }
+
+  .menu-image {
+    @apply w-full h-40 object-cover transition-transform duration-300 
+           hover:scale-105;
+  }
+
+  .category-button {
+    @apply px-8 py-3 rounded-full font-medium transition-all duration-300
+           bg-gradient-to-r from-[#d35400] to-[#e74c3c] 
+           text-white hover:shadow-lg hover:from-[#e67e22] hover:to-[#e74c3c]
+           active:scale-95 cursor-pointer text-base;
+  }
+
+  .search-input {
+    @apply w-full p-5 rounded-2xl border-2 border-gray-200 
+           focus:border-[#d35400] focus:ring-2 focus:ring-[#d35400]/20
+           transition-all duration-300 outline-none
+           text-gray-700 placeholder-gray-400 text-lg;
+  }
+
+  .meal-title {
+    @apply text-xl font-semibold text-[#2c3e50] mb-2;
+  }
+
+  .meal-category {
+    @apply text-sm text-gray-500 mb-3;
+  }
+
+  .meal-description {
+    @apply text-gray-600 line-clamp-2;
+  }
+}
+
+.detail-container {
+  @apply max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8;
+}
+
+.detail-title {
+  @apply text-4xl font-bold text-[#2c3e50] mb-6 
+         relative after:content-[''] after:absolute 
+         after:bottom-0 after:left-0 after:w-24 
+         after:h-1 after:bg-[#d35400];
+}
+
+.detail-image {
+  @apply w-full h-[300px] object-cover rounded-xl shadow-lg mb-8;
+}
+
+.detail-category {
+  @apply inline-block px-4 py-1.5 bg-[#d35400]/10 text-[#d35400] 
+         rounded-full font-medium mb-6;
+}
+
+.detail-ingredients {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 mb-8;
+}
+
+.ingredient-item {
+  @apply flex items-center space-x-2 text-gray-700;
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full h-12 w-12 border-4 
+         border-[#d35400] border-t-transparent;
+} 
