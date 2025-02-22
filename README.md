@@ -87,14 +87,6 @@ Projeyi production için build etmek:
 npm run build
 ```
 
-## Katkıda Bulunma
-
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
-
 ## Lisans
 
 MIT License - Detaylar için [LICENSE](LICENSE) dosyasına bakın.
